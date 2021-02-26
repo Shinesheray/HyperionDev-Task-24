@@ -1,0 +1,167 @@
+// This is the header section
+
+@import "variables"; // i realised here that i needed to import my variables scss file as the color of the header text was black so i fixed it to use the main text colour
+
+header {
+  height: 100vh;
+  background-image: url(../images/gaming_kit.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  color: $main-text-colour;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header::after {
+  content: "";
+  background-image: url(../images/pattern.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1.5; // The oppacity is to control the transparancy of the background image which is the pattern.png learnt from florin pop
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+  color: $default-text-colour;
+  margin-top: 0;
+  padding: 50px;
+  margin: 20px;
+}
+
+.ture-mexican {
+  font-size: 40px;
+  color: $default-text-colour;
+  margin: 10px;
+  text-align: center;
+}
+
+.winner {
+  font-size: 30px;
+  color: $default-text-colour;
+  margin: 0;
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+// Sweets header
+
+.sweet {
+  height: 100vh;
+  background-image: url(../images/dark_chocolate.jpg); // i needed to create a new background image in the header for the sweet tooth page
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  color: $main-text-colour;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// Gaming header
+.gamer-section {
+  height: 100vh;
+  background-image: url(../images/ps4_controller.jpg); // i needed to create a new background image in the header for the Gamer page
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  color: $main-text-colour;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+////////////////////Task 20 SCSS section
+// Comments section header
+.commenting {
+  height: 100vh;
+  background-image: url(../images/cmmentss.jpg); // i needed to create a new background image in the header for the sweet tooth page
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  color: $main-text-colour;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// Save for later header section
+.saving {
+  height: 100vh;
+  background-image: url(../images/Saved_items.jpg); // i needed to create a new background image in the header for the sweet tooth page
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  color: $main-text-colour;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// contact us header section
+.contactingMe {
+  height: 100vh;
+  background-image: url(../images/contact_us.jpg); // i needed to create a new background image in the header for the sweet tooth page
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  color: $main-text-colour;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/// this section is for the SCSS of gaming dropdown lists using Jquery
+#sortable {
+  float: right;
+  margin-bottom: 20%;
+  margin-top: 0%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  float: left;
+  width: 220px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #8f7e4f;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul li li {
+  display: none;
+  background: #111;
+  color: #fff;
+}
+ul li li a {
+  text-decoration: none;
+  color: #fff;
+}
+ul li li:hover {
+  background: #8f7e4f; /*when you hover over a item in the dropdown its colour changes to light pink*/
+}

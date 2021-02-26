@@ -1,0 +1,77 @@
+<!-- Here is my Comments page to which the comments tile links to this is for  for Task 20-->
+<!-- I used all the same tags And structure as the main page with most of the original SCSS howevwer there are are a few changes for the look -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss files/style.css">
+    <title>commments</title>
+</head>
+<body>
+  <nav id="navbar" class="navbar-section">
+    <a href="../index.html" >HOME</a>
+    <a href="#motivation">ABOUT ME</a>
+    <a href="#hobby">MY HOBBY</a>
+    <a href="./contactus.html">CONTACT DETAILS</a>
+    <a href="./savedforlater.html">SAVED ITEMS <span>0</span></a>
+    <a href="./other pages/comments.html">COMMENTS & FEEDBACK</a>
+  </nav>
+      
+      
+      <header class="commenting"> <!--Here I changed the header image background for this page i the SCSS page with the change on the class name -->
+        <h1>Comments Page!</h1>
+        <p class="ture-mexican">Let us know your thoughts come and share whats on your mind</p>
+        <p class="winner">Let us kno whether you like the site or something on it</p>
+      </header>
+      
+      <section id="motivation"> <!-- I kept the motivation section for this part at it kinda relates to having a sweet tooth if your on a diet. but I did the same style as what i did for the gamer page -->
+        <h2>Share your thoughts below</h2>
+        <div class="hola-amigo">
+        
+          <p>
+           All comments will be posted on this page 
+        
+         </p>
+        </div>
+
+
+        <form> <!--This is the comments section -->
+          <textarea id="comment" placeholder="Say something..." ></textarea><br>
+          <button class="post-your-comment" onclick="postComment();">
+            <a href="#" >Post comment!</a>
+          </button>
+       
+          
+      </form>
+      <div id="comments">
+      </div>
+      </section>
+<!-- End of comments section -->
+      
+      <footer id="contact-details">
+          <table >
+        <tr>
+          <th>CONTACT</th>
+          <th>SOCIAL'S</th>
+          <th>OTHER</th>
+        </tr>
+        <tr>
+          <td>shinesheray@gmail.com</td>
+          <td><a href="https://www.linkedin.com/in/shinesheray-myeza-7b5273120/" target="_blank"> LinkedIn </a></td>
+          <td><a href="https://www.facebook.com/shinesheray.myeza/" target="_blank" > Facebook </a></td>
+        </tr>
+        <tr>
+          <td>Cell : 0649696188</td>
+          <td><a href="https://twitter.com/shinesheray" target="_blank" > Twitter </a></td>
+          <td><a href="https://www.instagram.com/shinesheray/" target="_blank" > Instagram </a></td>
+        </tr>
+      </table>
+    </footer>
+
+    <script  src="../js/saveForLater.js"></script>
+    <script src="../js/formSection.js"></script>
+</body>
+</html>

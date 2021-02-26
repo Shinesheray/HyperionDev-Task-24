@@ -1,0 +1,152 @@
+// This is the form section
+
+#join {
+  background-color: #111;
+}
+
+.form-control,
+#myForm {
+  width: auto;
+  display: inline-block;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #d8ffdd;
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+  }
+}
+
+//Submit button section
+
+input [type="email"] {
+  // this section is the code for the submit buttion and email input
+  flex-wrap: wrap;
+  border-radius: 5px;
+  border: 0;
+  display: inline-block;
+  padding: 0px 0px;
+  width: 50%;
+  margin-bottom: 10px;
+
+  h2 {
+    color: #d8ffdd;
+  }
+
+  input {
+    border-radius: 5px;
+    border: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: $main-text-colour;
+    background-color: #d8ffdd;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+// form section for front page end
+
+// new section below for form for Task 20 like section
+
+.container2 {
+  position: relative;
+  left: 50%;
+  align-items: center;
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #c3c49e;
+}
+
+.container2:hover i {
+  color: #f44336;
+}
+
+.fas {
+  color: #f44336;
+  transition: 0.4s;
+}
+
+// This section now is for the Task 20 form of Comment section
+#comments {
+  color: #c3c49e;
+}
+textarea {
+  width: 30%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+.post-your-comment {
+  background-color: #c3c49e;
+  border: none;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: #524632;
+  }
+}
+// This form section is for people who want tp contact m
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea,
+input[type="email"] {
+  width: 50%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  color: #111;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #c3c49e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #524632;
+}
+
+/* Add a background color and some padding around the form */
+label {
+  border-radius: 5px;
+
+  color: #fff;
+  padding: 20px;
+}
+
+.chekk {
+  color: #fff;
+}
+// This is CSS for all the buttons
+.submiting {
+  background-color: #c3c49e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}

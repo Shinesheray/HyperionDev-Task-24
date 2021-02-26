@@ -1,0 +1,200 @@
+<!-- Here is my gaming page to which the hobies tile links to -->
+<!-- I used all the same tags And structure as the main page with most of the original SCSS howevwer there are are a few changes for the look -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/cbf9fe233f.js" crossorigin="anonymous"></script> <!-- I used a icon kit from fontawesome to make my like form button-->
+    <link rel="stylesheet" href="../scss files/style.css">
+    <title>Gamming hobbies</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar-section">
+        <a href="../index.html">HOME</a>  <!--The home and about me nav bar elements take the user back to the main page -->
+        <a href="../index.html">ABOUT ME</a>
+        <a href="#">MY HOBBY</a>
+        <a href="./contactus.html">CONTACT DETAILS</a>
+        <a href="../other pages/savedforlater.html">SAVED ITEMS <span>0</span></a>
+        <a href="../other pages/comments.html">COMMENTS & FEEDBACK</a>
+      </nav>
+      
+      <!-- end of nav section -->
+    
+
+
+      <header class="gamer-section"> <!--Here I changed the header image background for this page i the SCSS page with the change on the class name -->
+        <h1>GAMMING!</h1>
+        <p class="ture-mexican">Here all is welcomne</p>
+        <p class="winner">I DO CONSOLE <br>
+         BECAUSE YOU FEEL THE GAME MORE</p>
+      </header>
+      <!-- end of header section  -->
+
+      <section id="brief"> <!-- instead of motivation section I needed to change this section without changing the overall page SCSS, so i created a new class name for the section on this page sepcifically -->
+      
+        <div class="hola-amigo">
+     
+          <ul id="sortable">  <!--This section is to create the dropdown menu in javascript -->
+            <li><a href="#">HOVER HERE FOR CONTENT</a>
+            <ul>
+            <li><a href="#two-controllers">TWO CONTROLERS</a></li>
+            <li><a href="#lateNight">LATE NIGHTS</a></li>    
+            <li><a href="#competition">COMPETITION</a></li> 
+            <li><a href="#ultimate">ULTIMATE CONSOLE</a></li> 
+            <li><a href="#gamingkit">GAMING KIT</a></li> 
+    
+            </ul>   
+    
+        </ul>
+       
+      </section>
+      <p id="brief">below I briefly go over my gaming hobby with pctures to illustrate</p>
+      <!-- End of brief section -->
+
+      <section id="motivation"> <!-- So in this section i use the class name motivation because i really like the outcome and style of the pictures and the text that shows at the bottom, i had somethng else in mind but when i made a copy 3 times I saw magic so i chose this layout-->
+        <h2>Its Always best to have 2 controlers </h2>
+        <div class="hola-amigo">
+          <button class="post-your-comment" id="hide1">hide image</button> <!--I needed to changed the id and class for these buttons beause they work with the Jquery-->
+          <button class="post-your-comment" id="show1">show image</button>
+            <img src="../images/gamer_2controlers.jpg" alt="Contorlers" id="two-controllers" class="hiddengames1">
+
+          <p>
+            Its always fun to have two controllers, because nobody likes charging a contoller mid game<br>
+           The best part of having the two controllers is that it makes it easier, charge one and play with the other <br>
+           And when this one is flat, rotate and repeat.
+        
+         </p>
+        </div>
+        <form class="container2"> <!-- This is m forms for the Like buttons needed to be added using font awesome and Javascript-->
+          <i id="btn1" onclick="Toggle()" class="far fa-heart">Like</i>
+         </form>
+      </section>
+      
+
+     
+
+
+      <section id="motivation">
+        <h2>Those late night gaming times</h2>
+        <div class="hola-amigo">
+          <button class="post-your-comment" id="hide2">hide image</button> 
+          <button class="post-your-comment" id="show2">show image</button>
+            <img src="../images/gamer.jpg" alt="gamer" id="lateNight"  class="hiddengames2">
+
+          <p>
+           I Absoulutly love late night gaming because of the silence you have and peace of mind <br>
+            Its like being a night-crawler 
+        
+          </p>
+
+        </div>
+
+        <form class="container2"> <!-- These are forms for the Like buttons added using font awesome and Javascript-->
+          <i id="btn2" onclick="Toggle2()" class="far fa-heart">Like</i>
+         </form>
+      </section>
+
+
+
+
+      <section id="motivation">
+        <h2>A little competition</h2>
+        <div class="hola-amigo">
+          <button class="post-your-comment" id="hide3">hide image</button>
+          <button class="post-your-comment" id="show3">show image</button>
+            <img src="../images/competition.jpg" alt="competition" id="competition" class="hiddengames3">
+
+          <p>
+            Playing alone is fun but not always. I enjoy playing with my friends and we love getting competitive in any gaming challenge<br>
+            We play and laugh and never get tired of any of the games we play
+        
+          </p>
+
+        </div>
+        <form class="container2"> <!-- This is m forms for the Like buttons needed to be added using font awesome and Javascript-->
+          <i id="btn3" onclick="Toggle3()" class="far fa-heart">Like</i>
+         </form>
+      </section>
+
+
+
+
+      <section id="motivation">
+        <h2>The ultimate console right now</h2>
+        <div class="hola-amigo">
+          <button class="post-your-comment" id="hide4">hide image</button>
+          <button class="post-your-comment" id="show4">show image</button>
+            <img src="../images/ps5_console.jpg" alt="ps5-console" id="ultimate" class="hiddengames4">
+
+          <p>
+           This is the hottest console in the market right now, the Playstation 5. I would love to get my hands on such a powerfull console and all its glory <br>
+            The only issue is that it is mad exspensive, and I will wait a few years for the price to go down or just save up and buy it.
+        
+         </p>
+
+        </div>
+        <form class="container2"> <!-- This is m forms for the Like buttons needed to be added using font awesome and Javascript-->
+          <i id="btn4" onclick="Toggle4()" class="far fa-heart">Like</i>
+         </form>
+      </section>
+
+
+
+
+      <section id="motivation">
+        <h2>Gaming tools for me</h2>
+        <div class="hola-amigo">
+          <button class="post-your-comment" id="hide5">hide image</button> <!--all buttons on this page and on sweets page use the comments button class-->
+          <button class="post-your-comment" id="show5">show image</button>
+            <img src="../images/gaming_kit.jpg" alt="gamingkit" id="gamingkit" class="hiddengames5">
+
+          <p>
+            My number 1 gamers tool kit consists of 2 controllers, headphones, a 2lt coke, a bag of chips, some sweets for those chanllenges and a 5lt bottle of water <br>
+            Always stay hydrated and drink water.
+        
+         </p>
+
+        </div>
+        <form class="container2"> <!-- This is m forms for the Like buttons needed to be added using font awesome and Javascript-->
+          <i id="btn5" onclick="Toggle5()" class="far fa-heart">Like</i>
+         </form>
+
+      </section>
+
+
+    <!-- End of gaming section -->
+
+
+
+  
+
+      
+      <footer id="contact-details">
+          <table >
+        <tr>
+          <th>CONTACT</th>
+          <th>SOCIAL'S</th>
+          <th>OTHER</th>
+        </tr>
+        <tr>
+          <td>shinesheray@gmail.com</td>
+          <td><a href="https://www.linkedin.com/in/shinesheray-myeza-7b5273120/" target="_blank"> LinkedIn </a></td>
+          <td><a href="https://www.facebook.com/shinesheray.myeza/" target="_blank" > Facebook </a></td>
+        </tr>
+        <tr>
+          <td>Cell : 0649696188</td>
+          <td><a href="https://twitter.com/shinesheray" target="_blank" > Twitter </a></td>
+          <td><a href="https://www.instagram.com/shinesheray/" target="_blank" > Instagram </a></td>
+        </tr>
+      </table>
+    </footer> 
+    <script  src="../js/saveForLater.js"></script>
+    <script type="text/javascript" src="../js/formSection.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>

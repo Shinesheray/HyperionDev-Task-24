@@ -1,0 +1,119 @@
+<!-- Here is my Contact us page to which the Contact us tile links to. this is for  for Task 20-->
+<!-- I used all the same tags And structure as the main page with most of the original SCSS howevwer there are are a few changes for the look -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss files/style.css">
+    <title>Contact us</title>
+</head>
+<body>
+  <nav id="navbar" class="navbar-section">
+    <a href="../index.html" >HOME</a>
+    <a href="../index.html">ABOUT ME</a>
+    <a href="../index.html">MY HOBBY</a>
+    <a href="./contactus.html">CONTACT DETAILS</a>
+    <a href="./savedforlater.html">SAVED ITEMS <span>0</span></a>
+    <a href="./comments.html">COMMENTS & FEEDBACK</a>
+  </nav>
+      
+      
+      <header class="contactingMe"> <!--Here I changed the header image background for this page i the SCSS page with the change on the class name -->
+        <h1>Contact us!</h1>
+        <p class="ture-mexican">Let us know your thoughts come and share whats on your mind</p>
+        <p class="winner">Let us kno whether you like the site or something on it</p>
+      </header>
+      
+      <section id="motivation"> <!-- I kept the motivation section for this part at it kinda relates to having a sweet tooth if your on a diet. but I did the same style as what i did for the gamer page -->
+        <h2>Send us a message you and we will contact you soon</h2>
+        <div class="hola-amigo">
+        
+          <p>
+Please enter your details
+        
+         </p>
+        </div>
+
+       
+          
+      
+      <form onsubmit="return false" id="contact-form">  <!--I found a method to create the contact us form which asks the user to enter thier details and we use javascript to display thier name whilst storing the details in an object with javascript-->
+
+        <label for="">Please enter Surname :</label>
+        <br><br>
+        <input type="text" placeholder="Enter your last name" id="lastName" />
+                <br><br>
+                <label for="">Please enter your Name :</label>
+                <br><br>
+                <input type="text" placeholder="Enter your first name" id="firstName" />
+                <br><br>
+
+
+                <label for="">Please enter your Email :</label>
+                <br><br>
+                <input type="email" placeholder="Enter your email" id="email" />
+
+
+                <br><br>
+                <label for="">Please enter your Adress :</label>
+                <br><br>
+                <input type="text" placeholder="Address" id="address" />
+                   
+                <br><br>
+        
+                <input type="text" placeholder="House number" id="houseNumber" />
+                   
+
+                <br><br>
+                <label for="">Please select a City :</label>
+                <br><br>
+                <option disabled selected value> -- select a City -- </option>
+                <select id="city">
+                    <option disabled selected value> -- select a city -- </option>
+                    <option value="Johannesburg">Johannesburg</option>
+                    <option value="Cape-Twon">Cape Twon</option>
+                    <option value="Durban">Durban</option>
+                </select>
+                <br><br>
+
+
+                <label>What is your question?</label>
+                <br>
+                <textarea id="question" rows="4"></textarea>
+                <br><br>
+
+                <input type="checkbox" id="newsletter" /> <label> Send me monthly newsletter</label> 
+                <br><br>
+                <button onclick="sendContact();" class="submiting">Send contact</button>
+      </form>
+  
+    
+      <!-- End of contact form section -->
+      
+      <footer id="contact-details">
+          <table >
+        <tr>
+          <th>CONTACT</th>
+          <th>SOCIAL'S</th>
+          <th>OTHER</th>
+        </tr>
+        <tr>
+          <td>shinesheray@gmail.com</td>
+          <td><a href="https://www.linkedin.com/in/shinesheray-myeza-7b5273120/" target="_blank"> LinkedIn </a></td>
+          <td><a href="https://www.facebook.com/shinesheray.myeza/" target="_blank" > Facebook </a></td>
+        </tr>
+        <tr>
+          <td>Cell : 0649696188</td>
+          <td><a href="https://twitter.com/shinesheray" target="_blank" > Twitter </a></td>
+          <td><a href="https://www.instagram.com/shinesheray/" target="_blank" > Instagram </a></td>
+        </tr>
+      </table>
+    </footer>
+
+    <script  src="../js/saveForLater.js"></script>
+    <script src="../js/formSection.js"></script>
+</body>
+</html>

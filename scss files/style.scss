@@ -1,0 +1,145 @@
+// I did the SCSS for the task 15 project page below
+// I made use of nesting alot because i discovered how easy and fun it is to use it
+// most of my SCSS is from previouse CSS that I used from the last project and youtube tutorials and also from the referenced websites
+// the style and theme was inspired by chocolates and caramel and sweet stuff
+// I really enjoyed creating this project.
+
+@import "header"; //Importing the headers SCSS file to the main copycat scss file which we learnt from the lesson
+@import "variables"; // importing the variables for the colours from the variables SCSS page which we learnt from the lesson
+@import "form"; // Importing from the form section which is the forms SCSS
+@import "discover"; // this imports the SCSS for the discover me section which is the project-tile section
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap"); // I found out that you can use google fonts for other fonts you would like to use
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body-background; // Making use of the Variables for the color which we learnt from the lesson
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: $nav-bar-colour;
+  color: $main-text-colour;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; // i learnt z-index from we3Schools which works with methods such as fixed position: of the nav bar
+
+  // Here is used Nesting from what i learnt in the lesson
+  a {
+    color: $main-text-colour;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+
+  a:hover {
+    border-bottom: 3px solid $main-text-colour;
+  }
+}
+// nav bar section end
+
+#motivation {
+  // I used the hashtags to select the id elements it helps when you want to change a specific element or section
+  background-color: #111;
+}
+
+#hobby {
+  background-color: #8f7e4f;
+
+  h2 {
+    color: $body-background;
+  }
+}
+
+// gamming brief section
+#brief {
+  background-color: $body-background;
+  color: $main-text-colour;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  padding-top: 5%;
+  p {
+    color: $main-text-colour;
+  }
+}
+ul {
+  li {
+    color: $main-text-colour;
+  }
+}
+
+// end motovation
+
+section {
+  // this code applies to all sections
+  text-align: center;
+  padding: 15px;
+  // Here is used Nesting from what i learnt in the lesson
+  h2 {
+    margin-bottom: 0;
+    color: $main-text-colour;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.hola-amigo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 20px auto 0;
+  color: $body-background;
+
+  p {
+    font-size: 15px; // Here is used Nesting from what i learnt in the lesson
+  }
+}
+//hola amigo section end
+
+// footer section everything is nested neatly
+
+footer {
+  background-color: $nav-bar-colour;
+  color: $main-text-colour;
+  padding: 10px;
+  text-align: center;
+  table {
+    width: 80%;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: $main-text-colour;
+    }
+
+    a:hover {
+      border-bottom: 3px solid $main-text-colour;
+    }
+  }
+}
+
+.saved {
+  // this is for the save for later section buttons
+  background-color: #c3c49e;
+  color: #8f7e4f;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: none;
+}

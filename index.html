@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script><!--Added the Jquery CDN-->
+
+    <link rel="stylesheet" href="./scss files/style.css">
+    <title>Task 15 website Showcase</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar-section">
+        <a href="#welcome-section" class="navbar-section">HOME</a>
+        <a href="#motivation">ABOUT ME</a>
+        <a href="#hobby">MY HOBBY</a>
+        <a href="./other pages/contactus.html">CONTACT US</a>
+        <a href="./other pages/savedforlater.html">SAVED ITEMS <span>0</span></a>
+        <a href="./other pages/comments.html">COMMENTS & FEEDBACK</a>
+      </nav>
+      
+      <!--End of Nav section,  I learnt to end sections to make the code more readable -->
+      
+      <header id="welcome-section">
+        <h1>Hello!</h1>
+        <p class="ture-mexican">MY NAME IS SHINESHERAY</p>
+        <p class="winner">WELCOME TO MY WEBSITE <br>
+         GET TO KNOW ME AND ENJOY THE SITE</p>
+      </header>
+      
+<!--End of header section-->
+
+    
+      <section id="motivation">
+        <h2>MOTIVATION</h2>
+        <div class="hola-amigo">
+        
+          <p>
+            “A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing.” <br>
+            — George Bernhard Shaw
+        
+         </p>
+        </div>
+      </section>
+
+      <!-- End of motivational section -->
+
+      <section id="hobby">
+        <h2>DISCOVER ME</h2>
+        <div class="discover-section">
+        
+            <section id="projects"> <!--this section below is the project tile section wherethe user can click on the images which lead to other pages and websites -->
+            
+                <div class="projects-container">
+                <div class="project-tile"> 
+                   <a href="./other pages/gaming.html"
+                    target="_blank">
+                        <img src="./images/nentindo.jpg" alt="nentindo-contorler" /></a>
+                     
+                  <p>Click on the image to see my hobby.  <br> Dont forget to give it a Like!</p>   <!-- this links users to the gaming page created in the other pages  folder -->
+                </div>
+                <div class="project-tile">
+                 <a href="/final capstone project Task 20 complete/other pages/sweets.html"
+                    target="_blank">
+                        <img src="./images/chocolate.jpg" alt="Sweet-tooth" /></a>
+                  <p>Click here to see my Sweet tooth cravings. <br> You can Save the recepies too!</p> <!-- this links users to the sweets page created in the other pagers folder -->
+                  
+                </div>
+                <div class="project-tile">
+               <a href="https://shinesheray.github.io/Weather-App/"
+                    target="_blank">
+                        <img src="./images/weather-app.jpg" alt="Weather-app-image" /></a>
+                  <p> weather App <br>
+                     Click here to see a weather App i tried creating with a tutorial on youtube</p> <!-- this links users to the a weather app web page created in the and hosted  by github which i created last year  -->
+                  
+                </div>
+                <div class="project-tile">
+                 <a href="https://www.artsy.net/"
+                    target="_blank">
+                        <img src="./images/blue_orange.jpg" alt="blue-orange-image" /></a>
+                  <p>Click here to see this amazing art website that I like </p>
+                  
+                  </div>
+                </div>
+              </section>
+         
+        </div>
+      </section>
+
+      <!-- end of discover me section -->
+      
+      <section id="join">
+<!-- this submit and radio button section I created from watching a tutorial from florin pop on how to create a form and i had created one previously with freeCodeCamp https://codepen.io/shinesheray/pen/WNwLaYM -->
+        <div class="form-control">
+            <label><h2> What other content would you like to see in the next update? </h2></label>
+         
+         <label for="recommend-1"><input type="radio" id="recommend-1" name="recommend"  value="definitely"/>Japanese Wagyu vs Kobe beef</label>
+         
+         <label for="recommend-2"><input type="radio" id="recommend-2" name="recommend"  value="maybe"/>All things pizza</label>
+         
+         <label for="recommend-3"><input type="radio" id="recommend-3" name="recommend"  value="not-sure"/>Programming memes</label>
+         </div>
+
+
+        <div class="container">
+          <form id="form" action="#">
+            <h2>To Submit your answer, Please enter your email below and submit</h2>
+            
+            <div class="flex">
+            <input id="email" type="email" name="email" placeholder="Enter your email adress" />
+           <br><br>
+            <input id="submit" type="submit" value="submit"/>
+            </div>
+            
+          </form>
+          
+        </div>
+        
+        
+        
+      </section>
+
+
+      <!-- End of submit section This section was created in task 15 Capstone project already -->
+      
+
+      <!--Footer sectopm below taken from the prevouse task and updated-->
+      <footer id="contact-details">
+          <table > <!--Here i used a table to create the footer information section which has my contact details -->
+        <tr>
+          <th>CONTACT</th>
+          <th>SOCIAL'S</th>
+          <th>OTHER</th>
+        </tr>
+        <tr>
+          <td>shinesheray@gmail.com</td>
+          <td><a href="https://www.linkedin.com/in/shinesheray-myeza-7b5273120/" target="_blank"> LinkedIn </a></td>
+          <td><a href="https://www.facebook.com/shinesheray.myeza/" target="_blank" > Facebook </a></td>
+        </tr>
+        <tr>
+          <td>Cell : 0649696188</td>
+          <td><a href="https://twitter.com/shinesheray" target="_blank" > Twitter </a></td>
+          <td><a href="https://www.instagram.com/shinesheray/" target="_blank" > Instagram </a></td>
+        </tr>
+      </table>
+    </footer>
+
+    <script src="./js/saveForLater.js"></script>
+</body>
+</html>
+
+
+<!-- references:
+I used the HTML Skeleton from my prevouse task 14 with some additional sections to complete my project
+I was able to find the correct colors using hex numbers from color palette https://coolors.co/generate 
+I was able to get images from unsplash https://unsplash.com/s/photos/ps5 
+ most of the SCSS and HTML for this project and tile hover effect comes from a project I had done for FreeCodeCamp https://codepen.io/shinesheray/pen/wvWwwxY
+ All links on the index page opens in a new tab
+I found a method to creating an input form from freeCodeCamp https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/add-a-submit-button-to-a-form -->
